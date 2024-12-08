@@ -1,3 +1,11 @@
+//
+//  Station.swift
+//  EasyMusic
+//
+//  Created by Platon on 08.12.2024.
+//
+
+
 import SwiftUI
 
 struct Station: Identifiable {
