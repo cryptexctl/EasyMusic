@@ -36,6 +36,12 @@ struct ContentView: View {
             description: "Музыка всех жанров, характеров и исполнителей. Идеально подойдет для меломанов.",
             streamURL: "http://45.95.234.91:8000/music",
             color: LinearGradient(colors: [.yellow, .orange], startPoint: .top, endPoint: .bottom)
+        ),
+        Station(
+            name: "Memschol FM",
+            description: "полная сборная солянка от красивых и уникальных жанров до рофл гей ремиксов и блатных треков, часто проводятся подкасты на разные темы в прямом эфире от простого общения до политики",
+            streamURL: "https://stream.zeno.fm/hydtchh8maguv.m3u",
+            color: LinearGradient(colors: [Color(red: 106/255, green: 13/255, blue: 173/255), Color.purple], startPoint: .top, endPoint: .bottom)
         )
     ]
 

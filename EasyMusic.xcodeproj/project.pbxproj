@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F0CD7D9B2D059D7B0034CC02 /* Exceptions for "EasyMusic" folder in "EasyMusic" target */ = {
+		F0D851512D064F7E001A76ED /* Exceptions for "EasyMusic" folder in "EasyMusic" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,20 +43,11 @@
 		F0CD7D6D2D059CED0034CC02 /* EasyMusic */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F0CD7D9B2D059D7B0034CC02 /* Exceptions for "EasyMusic" folder in "EasyMusic" target */,
+				F0D851512D064F7E001A76ED /* Exceptions for "EasyMusic" folder in "EasyMusic" target */,
 			);
-			path = EasyMusic;
-			sourceTree = "<group>";
-		};
-		F0CD7D7E2D059CEE0034CC02 /* EasyMusicTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EasyMusicTests;
-			sourceTree = "<group>";
-		};
-		F0CD7D882D059CEE0034CC02 /* EasyMusicUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EasyMusicUITests;
-			sourceTree = "<group>";
+			name = EasyMusic;
+			path = /Users/arbung/iOS/calcul/platonfm/EasyMusic/EasyMusic;
+			sourceTree = "<absolute>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -89,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				F0CD7D6D2D059CED0034CC02 /* EasyMusic */,
-				F0CD7D7E2D059CEE0034CC02 /* EasyMusicTests */,
-				F0CD7D882D059CEE0034CC02 /* EasyMusicUITests */,
 				F0CD7D6C2D059CED0034CC02 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +132,6 @@
 			dependencies = (
 				F0CD7D7D2D059CEE0034CC02 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				F0CD7D7E2D059CEE0034CC02 /* EasyMusicTests */,
-			);
 			name = EasyMusicTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +151,6 @@
 			);
 			dependencies = (
 				F0CD7D872D059CEE0034CC02 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F0CD7D882D059CEE0034CC02 /* EasyMusicUITests */,
 			);
 			name = EasyMusicUITests;
 			packageProductDependencies = (
@@ -409,7 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"EasyMusic/Preview Content\"";
 				DEVELOPMENT_TEAM = 25G2F7AWV6;
 				ENABLE_PREVIEWS = YES;
@@ -419,6 +402,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -426,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = platon.EasyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -441,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"EasyMusic/Preview Content\"";
 				DEVELOPMENT_TEAM = 25G2F7AWV6;
 				ENABLE_PREVIEWS = YES;
@@ -451,6 +435,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -458,7 +443,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = platon.EasyMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
