@@ -1,9 +1,9 @@
-name: говно говновоз говновозз
+name: говночисты
 
 on:
   push:
     branches:
-      - main  # членикс
+      - main  # 
 
 jobs:
   build:
@@ -18,15 +18,15 @@ jobs:
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: latest-stable  # мне лень версию ставить
+          xcode-version: latest-stable  # 
 
       # Шаг 3: Сборка и архивация проекта
       - name: Build and archive Xcode project
         run: |
           xcodebuild clean archive \
-            -project EasyMusic.xcodeproj \  # Укажите имя вашего файла `.xcodeproj`
-            -scheme EasyMusic \            # Укажите имя вашей схемы
-            -configuration Release \
+            -project EasyMusic.xcodeproj \  # 
+            -scheme EasyMusic \            # 
+            -configuration Release \       # 
             -archivePath ./build/EasyMusic.xcarchive \
             -destination 'generic/platform=iOS'
 
