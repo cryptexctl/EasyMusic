@@ -24,16 +24,15 @@ jobs:
           xcodebuild -resolvePackageDependencies -project EasyMusic.xcodeproj
 
       # Шаг 4: Сборка и архивация проекта
-      - name: Build and archive iOS project
+      - name: Build and archive Xcode project
         run: |
           xcodebuild clean archive \
-            -project EasyMusic.xcodeproj \
-            -scheme "EasyMusic" \
-            -configuration Release \
-            -archivePath ./build/EasyMusic.xcarchive \
-            -destination "platform=iOS Simulator,name=iPhone 14" \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO
-
+          -project EasyMusic.xcodeproj \
+          -scheme "EasyMusic" \
+          -configuration Release \
+          -archivePath ./build/EasyMusic.xcarchive \
+          -destination "platform=iOS Simulator,id=03E1628D-2AC8-4F79-9519-EC8C592CABB8" \
+          CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO
       # Шаг 5: Создание IPA вручную
       - name: Create unsigned IPA
         run: |
