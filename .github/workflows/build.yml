@@ -28,6 +28,10 @@ jobs:
             -destination "generic/platform=iOS" \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
+      - name: Check .xcarchive content
+        run: |
+          ls -l ./build/EasyMusic.xcarchive/Products/Applications
+
       - name: Create unsigned .ipa
         run: |
           APP_PATH="./build/EasyMusic.xcarchive/Products/Applications/EasyMusic.app"
