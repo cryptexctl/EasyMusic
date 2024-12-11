@@ -1,0 +1,32 @@
+name: Build and Test Xcode Project
+
+on:
+  push:
+    branches:
+      - main  # what
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Install dependencies
+        run: |
+          brew install cocoapods
+          pod install
+
+      - name: Build and test
+        run: |
+          xcodebuild clean build test \
+            -workspace EasyMusic.xcworkspace \
+            -scheme EasyMusic \
+            -destination 'platform=iOS Simulator,name=iPhone 14,OS=16.2' \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
