@@ -1,9 +1,9 @@
-name: говночисты
+name: Build, Archive and Package iOS App
 
 on:
   push:
     branches:
-      - main  # 
+      - main  
 
 jobs:
   build:
@@ -18,32 +18,27 @@ jobs:
       - name: Set up Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: latest-stable  # 
+          xcode-version: latest-stable
 
       # Шаг 3: Сборка и архивация проекта
       - name: Build and archive Xcode project
         run: |
           xcodebuild clean archive \
-            -project EasyMusic.xcodeproj \  # 
-            -scheme EasyMusic \            # 
-            -configuration Release \       # 
-            -archivePath ./build/EasyMusic.xcarchive \
-            -destination 'generic/platform=iOS'
+            -project EasyMusic.xcodeproj \
+            -scheme "EasyMusic" \
+            -configuration Release \
+            -archivePath "./build/EasyMusic.xcarchive" \
+            -destination "generic/platform=iOS"
 
       # Шаг 4: Создание IPA вручную
       - name: Package .app into .ipa
         run: |
-          # Путь к .app файлу внутри .xcarchive
           APP_PATH="./build/EasyMusic.xcarchive/Products/Applications/EasyMusic.app"
-          
-          # Создаём папку Payload и копируем .app в неё
           mkdir -p Payload
           cp -R "$APP_PATH" Payload/
-
-          # Упаковываем Payload в app-release.ipa
           zip -r EasyMusic-release.ipa Payload
 
-      # Шаг 5: Загрузка .ipa в артефакты GitHub Actions (для скачивания)
+      # Шаг 5: Загрузка .ipa в артефакты GitHub Actions
       - name: Upload .ipa as artifact
         uses: actions/upload-artifact@v3
         with:
