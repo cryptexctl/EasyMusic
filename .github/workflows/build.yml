@@ -30,7 +30,7 @@ jobs:
 
       - name: Check .xcarchive content
         run: |
-          ls -l ./build/EasyMusic.xcarchive/Products/Applications
+          ls -l ./build/EasyMusic.xcarchive/Products/Applications/*/*
 
       - name: Create unsigned .ipa
         run: |
