@@ -20,7 +20,7 @@ jobs:
         with:
           xcode-version: latest-stable
 
-      # Шаг 3: Сборка и архивация проекта
+      # Шаг 3: Сборка и архивация проекта с автоматической подписью
       - name: Build and archive Xcode project
         run: |
           xcodebuild clean archive \
@@ -28,7 +28,8 @@ jobs:
             -scheme "EasyMusic" \
             -configuration Release \
             -archivePath "./build/EasyMusic.xcarchive" \
-            -destination "generic/platform=iOS"
+            -destination "generic/platform=iOS" \
+            -allowProvisioningUpdates
 
       # Шаг 4: Создание IPA вручную
       - name: Package .app into .ipa
