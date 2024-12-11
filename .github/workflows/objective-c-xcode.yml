@@ -27,14 +27,13 @@ jobs:
       - name: Build xcarchive
         run: |
           xcodebuild clean archive \
-            -project EasyMusic.xcodeproj \
-            -scheme EasyMusic \
-            -configuration Release \
-            -archivePath ./build/EasyMusic.xcarchive \
-            -destination "generic/platform=iOS" \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_ALLOWED=NO
-
+          -project EasyMusic.xcodeproj \
+          -scheme EasyMusic \
+          -configuration Release \
+          -archivePath ./build/EasyMusic.xcarchive \
+          -destination "generic/platform=iOS" \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_ALLOWED=NO
       # Шаг 4: Сохранение xcarchive как артефакт
       - name: Upload xcarchive as artifact
         uses: actions/upload-artifact@v3
