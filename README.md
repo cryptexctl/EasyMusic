@@ -11,7 +11,11 @@
  <!--START_SECTION:waka-->
 
 ```txt
-No activity tracked
+Swift          1 hr 1 min      ██████████▒░░░░░░░░░░░░░░   41.76 %
+Other          49 mins         ████████▒░░░░░░░░░░░░░░░░   33.98 %
+Objective-C    35 mins         ██████░░░░░░░░░░░░░░░░░░░   24.12 %
+Image (jpeg)   0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.14 %
+Text           0 secs          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 %
 ```
 
 <!--END_SECTION:waka-->
