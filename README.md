@@ -11,8 +11,9 @@
  <!--START_SECTION:waka-->
 
 ```txt
-Other         6 hrs 47 mins   █████████████████████████   99.37 %
-Objective-C   2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.63 %
+Other         11 hrs 13 mins  ███████████████████████▒░   93.90 %
+Swift         41 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.74 %
+Objective-C   2 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.36 %
 ```
 
 <!--END_SECTION:waka-->
